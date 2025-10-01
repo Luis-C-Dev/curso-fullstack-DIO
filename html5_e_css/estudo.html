@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudando semantica no html5 basico na DIO</title>
+</head>
+<body>
+    <!-- Sugestão: Use comentários para explicar a função das tags semânticas no seu código -->
+    <!-- As tags <header>, <nav>, <section>, <article> e <footer> ajudam a estruturar melhor o HTML e facilitam a acessibilidade e o SEO. -->
+    <h1>hello world again</h1>
+    <section>section: sessão simples e generica/ quase a mesma coisa que o div normal mas é mais correto semanticamente</section>
+    <header> header: seria o cabeçalho do site</header>
+    <footer>footer: seria o rodapé do site a parte de baixo final</footer>
+    <div>lembrando que essas sessões estam em posições aleatorias. é só pra aprendizado de cada uma não to fazendo um site de verdade</div>
+    e esses textos estão soltos dentro de cada divisória o que seria errado. deveria criar a divisoria e depois colocar abrindo e fechando a tag
+    <article>article: seria um artigo, uma notícia, um post de blog, algo do tipo</article>
+    <nav>nav: seria o menu de navegação do site</nav>
+    <p>p: é o paragrafo basicamente é o conteudo de qualquer mensagem q vc queira passar</p>
+     <a href="youtube.com.br" target="_blank" >a: serve pra links. se vc clicar em mim vc sera redirecionado para o youtube</a> <!-- não da com o live server pq o live server cria um servidor que ja é um link. ent se mistura o link do servidor com o do youtube e da erro.//esse segundo comando target serve pra abrir o link em outra aba -->
+     <p>img é facil. inserir uma imagem</p>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4n94i7J7UFS3JHaAxxPXOZy3RUA4ECCfhyA&s" alt="um garoto programador"> <!-- alt é o texto alternativo que aparece caso a imagem n carregue. é bom por causa da acessibilidade-->
+     <p>pro css é importante saber que pro id pra o css encontrar se usa "#" e pro class "."</p>
+     <p>tudo que tem em um site podemos imaginar como se ele fosse responsavel por um quadrado e cada quadrado possue 3 camadas: margin, border, padding e o conteudo vai dentro deles</p><br><br><br>
+     <h2 style="color: red;">importante dms</h2>
+     <p>Beleza! Vou te montar um **resumão estilo dicionário** dos principais comandos de **centralização/alinhamento no CSS**, principalmente **Flexbox** e alinhamento de texto.
+
+---
+
+### **1. `text-align`** (alinhamento de texto dentro do container)
+
+| Comando   | Descrição                                                                          |
+| --------- | ---------------------------------------------------------------------------------- |
+| `left`    | Alinha o texto à esquerda (padrão)                                                 |
+| `right`   | Alinha o texto à direita                                                           |
+| `center`  | Centraliza horizontalmente o texto                                                 |
+| `justify` | Justifica o texto, ajustando espaçamento entre palavras para ocupar toda a largura |
+
+---
+
+### **2. `justify-content`** (alinhamento de itens no **eixo principal** de um flex container)
+
+| Comando         | Descrição                                                       |
+| --------------- | --------------------------------------------------------------- |
+| `flex-start`    | Itens alinhados no início do container                          |
+| `flex-end`      | Itens alinhados no final do container                           |
+| `center`        | Itens centralizados no eixo principal                           |
+| `space-between` | Espaço igual entre itens, primeira à esquerda, última à direita |
+| `space-around`  | Espaço igual ao redor de cada item                              |
+| `space-evenly`  | Espaço igual **entre e nas extremidades** de todos os itens     |
+
+---
+
+### **3. `align-items`** (alinhamento de itens no **eixo cruzado** de um flex container)
+
+| Comando      | Descrição                                                   |
+| ------------ | ----------------------------------------------------------- |
+| `flex-start` | Itens alinhados no início do eixo cruzado                   |
+| `flex-end`   | Itens alinhados no final do eixo cruzado                    |
+| `center`     | Itens centralizados no eixo cruzado                         |
+| `baseline`   | Itens alinhados pela linha de base do texto                 |
+| `stretch`    | Itens esticam para ocupar toda a altura disponível (padrão) |
+
+---
+
+### **4. `align-self`** (sobrepõe `align-items` para **um item específico**)
+
+| Comando      | Descrição                                          |
+| ------------ | -------------------------------------------------- |
+| `auto`       | Herda do `align-items` do container                |
+| `flex-start` | Item alinhado no início do eixo cruzado            |
+| `flex-end`   | Item alinhado no final do eixo cruzado             |
+| `center`     | Item centralizado                                  |
+| `baseline`   | Alinhado pela linha de base                        |
+| `stretch`    | Item esticado para ocupar toda a altura disponível |
+
+---
+
+### **5. `align-content`** (alinhamento de **linhas múltiplas** em flex container)
+
+| Comando         | Descrição                                             |
+| --------------- | ----------------------------------------------------- |
+| `flex-start`    | Linhas agrupadas no início do container               |
+| `flex-end`      | Linhas agrupadas no final                             |
+| `center`        | Linhas centralizadas                                  |
+| `space-between` | Espaço igual entre linhas                             |
+| `space-around`  | Espaço igual ao redor das linhas                      |
+| `stretch`       | Linhas esticam para ocupar toda a altura do container |
+
+---
+
+Se você quiser, posso te fazer **uma versão ainda mais enxuta**, tipo **uma tabela única com todos os comandos de centralização do CSS que você provavelmente vai usar**, pra você **decorar rapidinho**.
+
+Quer que eu faça?
+</p>
+</body>
+</html>

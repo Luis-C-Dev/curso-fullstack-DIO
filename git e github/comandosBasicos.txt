@@ -1,0 +1,46 @@
+usando o terminal: git bash
+ls: simplesmente lista os arquivos e pastas de uma determinada pasta
+cd:entra nas pastas ex: cd user/luis/arquivo que eu quero
+cd ..: pra voltar uma pasta (tem que ter o espaço)
+clear: limpa o terminal. ATALHO: CTRL + L
+o tab vai auto-completar o nome da pasta.
+para pastas nomeadas com espaço é só colocar o nome do arquivo dentro de aspas
+echo: cria arquivos. deve ser usado com o redirecionador ">" antes vem o conteudo do arquivo, depois vem o nome do arquivo e pra onde vai esse conteudo q vc fez. EX: echo hello > hello.txt
+rm -rf: o "rm" significa remove, o "r" serve pra remover todos os arquivos de dentro da pasta, e o "m" serve pra não pedir autorização. vai apagar de uma vez
+EX:rm -rf hello.txt 
+setinha pra cima caminha no historico dos codigos que fizemos
+mkdir: make directory, comando pra fazer um diretorio (uma pasta comum)
+git status: mostra os status do git. no caso do que eu acabei de fazer ele respondeu que esta tudo em ordem
+interessante saber. raramente usarei:openssl sha1: criptografa um arquivo de maneira especifica e unica. EX: openssl sha1 hello.txt RESULTADO:d96760cc77c2920c10d47ed460b047380d75fefa
+
+
+
+adicionar repositorio ao github
+mkdir nome-do-projeto: cria o arquivo
+cd nome-do-projeto: redirecione para a pasta onde se localiza o projeto
+git init: cria a pasta oculta onde funciona a tecnologia do git
+
+git add .: adiciona os arquivos que serão enviados(se não fizer é como se o arquivo oculto do git apenas esteja localizado la mas não sabe qual arquivo deve usar)
+git commit -m "primeiro commit": primeiro commit
+
+git remote add origin https://github.com/SEU-USUARIO/nome-do-repo.git: conecta ao github
+
+git branch -M main: Esse comando renomeia a branch atual para main. Antigamente o Git usava master como nome padrão, mas hoje em dia o GitHub e outros serviços usam main.
+
+git push -u origin main: Esse comando envia (push) o conteúdo da branch main para o repositório remoto chamado origin (que é o GitHub).
+
+O -u (ou --set-upstream) serve para criar um vínculo entre a sua branch local (main) e a branch remota (main).
+
+👉 Isso significa que, depois de fazer isso, você pode simplesmente usar:
+
+git push
+git pull
+
+
+sem precisar escrever toda vez origin main, porque já ficou configurado.
+
+👉 Pronto. A partir daí, sempre que quiser atualizar:
+
+git add .
+git commit -m "mensagem da alteração"
+git push   

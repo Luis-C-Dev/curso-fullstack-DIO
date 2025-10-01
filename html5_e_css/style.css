@@ -1,0 +1,51 @@
+body{
+    background-color: azure;
+    max-width: 900px;
+    margin: auto;
+}
+#titulo{
+    color: blue;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-top: 3px dotted green;
+    border-right: 3px dashed orange;
+    padding: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+}   
+a {
+    text-decoration: line-through;
+    color: #505050;
+}
+.tituloDoPost{
+    color: red;
+}
+.subtitulo{
+    color: purple;
+}
+#titulo, .tituloDoPost, .subtitulo{
+    text-decoration: underline;
+}
+.post{
+    background-color: #fcfcfc;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+.textoDoPost{
+    text-transform: capitalize;
+    text-align: justify;
+}
+.listaNaoOrdenada{
+    list-style-type: none;
+    padding-left: 0;
+   
+}
+/* da pra mostrar o caminho pro css q ele encontra o que eu quero: */
+.listaNaoOrdenada li a {
+color: orange;
+}
+.fotoDoCaraProgramando{
+    width: 100%;
+}
