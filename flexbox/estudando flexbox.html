@@ -5,7 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
+    <p>a tag "container" é a tag que envolve os itens e é nela que aplicaremos as propriedades "display: flex" ela vai transformar os itens de dentro em "flex-itens"</p>
+    <p>propriedades relacionadas:</p>
+    <ol>
+        <li>display — define como um elemento será exibido (block, inline, flex, grid, etc.).</li>
+        <li>flex-direction — define a direção dos itens no container flex eles são:</li>
+        <ul>
+            <li>row (padrão): à direção do texto, esquerda para a direita</li>
+            <li>row reverse: é o contrario</li>
+            <li>column: ordenação de cima pra baixo, em coluna unica</li>
+            <li>column reverse: o contrario de baixo pra cima</li>
+        </ul>
+        <li>flex-wrap — controla se os itens devem quebrar para a linha de baixo quando não couberem.</li>
+        <li>flex-flow — atalho que combina flex-direction e flex-wrap.</li>
+        <li>justify-content — alinha os itens no eixo principal (horizontal por padrão).</li>
+        <li>align-items — alinha os itens no eixo transversal (vertical por padrão).</li>
+        <li>align-content — alinha várias linhas de itens no container (quando há quebra de linha).</li>
+        <li>gap — define o espaçamento entre os itens no container flex.</li>
+    </ol>
+    <p>propriedades relacionadas flex-itens</p>
+    <ol>
+        <li>flex-grow — define quanto um item pode crescer em relação aos outros dentro do container.</li>
+        <li>flex-basis — define o tamanho inicial do item antes da distribuição de espaço.</li>
+        <li>flex-shrink — define quanto um item pode encolher em relação aos outros.</li>
+        <li>flex — atalho que combina flex-grow, flex-shrink e flex-basis.</li>
+        <li>order — define a ordem de exibição dos itens dentro do container flex.</li>
+        <li>align-self — permite sobrescrever o align-items para um item específico.</li>
+
+    </ol>
+
+    <container>
+        <img src="https://mapacultural.secult.ce.gov.br/files/agent/40104/img-20240607-wa0014.jpg" alt="fotinha do palhaçoo caçarola">
+        <img src="https://mapacultural.secult.ce.gov.br/files/agent/40104/img-20240607-wa0014.jpg" alt="fotinha do palhaçoo caçarola">
+        <img src="https://mapacultural.secult.ce.gov.br/files/agent/40104/img-20240607-wa0014.jpg" alt="fotinha do palhaçoo caçarola">
+    </container>
     
 </body>
 </html>
