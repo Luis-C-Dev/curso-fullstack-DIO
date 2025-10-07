@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conteiner{
+        max-width: 350px;
+        border: 2px solid black;
+        display: flex;
+    }
+    .item{
+        background-color: blueviolet;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+    }
+    .flex{
+        flex: 0;
+    }
+    .center{
+        align-items: center;
+    }
+    .strectch{
+        align-items: stretch;
+    }
+    .start{
+        align-items: flex-start;
+    }
+    .end{
+        align-items: flex-end;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+    .column{
+        flex-direction: column;
+    }
+</style>
+<body>
+    <h1>align-items</h1>
+    <h2>row</h2>
+    <p>center: o flex:1; esta fazendo com que cada item cresça de acordo com o texto</p>
+    <section class="conteiner center flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+    <p>strectch: faz com que os itens cresçam de acordo com o item com maior texto</p>
+    <section class="conteiner strectch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet colocando mais texto ainda do que o item que quis me desafiar na quantidade de texto</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+     <p>flex-start: puxa os itens para a parte de cima dos conteiners</p>
+    <section class="conteiner start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet colocando mais texto ainda do que o item que quis me desafiar na quantidade de texto</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+    <p>flex-end: puxa os itens para a parte de baixo dos conteiners</p>
+    <section class="conteiner end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet colocando mais texto ainda do que o item que quis me desafiar na quantidade de texto</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+    <p>baseline: era pra eles ficarem retos com a linha ai a parte violeta tinha que se espandir pra cima. vou resolver ainda</p>
+    <section class="conteiner baseline">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+    <h2>colunm</h2>
+    <p>flex-start:</p>
+    <section class="conteiner collumn start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet colocando mais texto ainda do que o item que quis me desafiar na quantidade de texto</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+    </section>
+    <p>flex-end:</p>
+    <section class="conteiner collumn end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet colocando mais texto ainda do que o item que quis me desafiar na quantidade de texto</div>
+        <div class="item">item 3 colocando mais texto que o item de tras</div>
+</body>
+</html>

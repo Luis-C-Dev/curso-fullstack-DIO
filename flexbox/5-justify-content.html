@@ -6,9 +6,123 @@
     <title>Document</title>
 </head>
 <style>
+    .conteiner{
+        max-width: 400px;
+        border: 2px solid black;
+        margin: 0;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .item{
+        background-color: blueviolet;
+        text-align: center;
+        color: white;
+        margin: 5px;
+      
+    }
+    .flex-start{
+        justify-content: flex-start;
+    }
+    .flex-end{
+        justify-content: flex-end;
+    }
+    .flex-center{
+        justify-content: center;
+    }
+    .space-between{
+        justify-content: space-between;
+    }
+    .space-arround{
+        justify-content: space-around;
+    }
+    .collunm{
+        flex-direction: column;
+       width: 150px;
+       min-height: 200px;
+    }
     
 </style>
 <body>
-    
+<h1>row</h1>
+<p>flex start: itens no começo</p>
+    <section class="conteiner flex-start">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+
+    </section>
+    <p>flex end: itens no final</p>
+        <section class="conteiner flex-end">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+
+    </section>
+    <p>center: itens no meio</p>
+        <section class="conteiner flex-center">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>space-between: todos os itens possuem o mesmo espaço entre eles</p>
+        <section class="conteiner space-between">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>space-arround: todos os itens possuem o mesmo espaço entre eles e as bordas</p>
+        <section class="conteiner space-arround">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <h1>collunm</h1>
+      <p>flex-start</p>
+        <section class="conteiner flex-start collunm">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>flex-end</p>
+        <section class="conteiner flex-end collunm">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>center</p>
+        <section class="conteiner flex-center collunm">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>space-between</p>
+        <section class="conteiner space-between collunm">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
+    <p>space-around</p>
+        <section class="conteiner space-arround collunm">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+    </section>
 </body>
 </html>
