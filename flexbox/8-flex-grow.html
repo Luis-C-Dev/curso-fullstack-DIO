@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flex-grow</title>
 </head>
+<style>
+    .flex-container {
+        display: flex;
+        border: 2px solid black;
+        max-width: 300px;
+    }
+    .item{
+        background-color: orangered;
+        margin: 5px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    .fg-0{
+        flex-grow: 0;
+    }
+    .fg-1{
+        flex-grow: 1;
+    }
+    .fg-2{
+        flex-grow: 2;
+    }
+    .fg-3{
+        flex-grow: 3;
+    }
+
+</style>
 <body>
-    
+    <h1>flex-grow: O flex-grow define quanto um item flexível vai crescer dentro de um contêiner flex em relação aos outros itens, quando há espaço sobrando.</h1>
+    <h2>flex-grow:0</h2>
+    <div class="flex-container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+    <h2>flex-grow:1 obs: o item B esta com fg:2;</h2>
+    <div class="flex-container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+    <h2>flex-grow:2 obs: o item b esta com fg:3; mas ele é menor pq o item A tem mais conteúdo</h2>
+    <div class="flex-container">
+        <div class="item fg-1">Aaaaaaaaaaaaaa</div>
+        <div class="item fg-3">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
 </body>
 </html>

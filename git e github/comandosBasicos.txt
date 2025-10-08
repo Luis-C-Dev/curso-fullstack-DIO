@@ -44,3 +44,10 @@ sem precisar escrever toda vez origin main, porque já ficou configurado.
 git add .
 git commit -m "mensagem da alteração"
 git push   
+
+MUDAR A BRANCH:git checkout -b nome-da-branch: isso cria e ja muda a branch
+o que fazer dps de mudar a branch
+git add .
+git commit -m "adicionei nova funcionalidade"
+git push origin nome-da-branch
+pra mudar a branch de voltar por exemplo pra main: git switch main

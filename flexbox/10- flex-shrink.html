@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    display: flex;
+    border: 2px solid black;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+.item{
+    margin: 5px;
+    background-color: orangered;
+    text-align: center;
+    font-size: 24px;
+}
+.fs-1{
+    flex-shrink: 1;
+}
+.fs-0{
+    flex-shrink: 0;
+    flex-basis: 100px;
+}
+.fg-1{
+    flex-grow: 1;
+}
+</style>
+<body>
+    <h1>flex-shirink: propriedade que estabelece a capacidade de redução e copremsão de um item</h1>
+    <p>flex-shrink:1</p>
+    <div class="container">
+        <div class="item fs-1 fg-1">A</div>
+        <div class="item fs-1 fg-1">B</div>
+        <div class="item fs-1 fg-1">C</div>
+        <div class="item fs-1 fg-1">D</div>
+        <div class="item fs-1 fg-1">E</div>
+    </div>
+    <div class="container">
+        <div class="item fs-1 fg-1">A</div>
+        <div class="item fs-1 fg-1">the generated</div>
+        <div class="item fs-1 fg-1">C</div>
+        <div class="item fs-1 fg-1">D</div>
+        <div class="item fs-1 fg-1">E</div>
+    </div>
+    <p>flex-shrink:0/ basis:100px</p>
+    <div class="container">
+        <div class="item fs-0 fg-1">A</div>
+        <div class="item fs-0 fg-1">the generated</div>
+        <div class="item fs-0 fg-1">C</div>
+        <div class="item fs-0 fg-1">D</div>
+        <div class="item fs-0 fg-1">E</div>
+    </div>
+</body>
+</html>

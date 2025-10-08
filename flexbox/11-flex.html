@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<style>
+.flex-container{
+    display: flex;
+    border: 2px solid black;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+.item{
+    margin: 5px;
+    background-color: orangered;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.largura{
+    width: 200px;
+    /* min-width: 250px; */
+}
+.flex-1{
+    flex: 1; /* flex-grow:1; flex-shrink:1; flex-basis:0;*/
+}
+.flex-2{
+    flex: 2; /* flex-grow:2; flex-shrink:1; flex-basis:0;*/
+}
+</style>
+<body>
+    <h1>flex: abreviação para o grow, shrink e basis nessa ordem: <br>
+flex-grow → “cresça se sobrar espaço.”<br>
+
+flex-shrink → “encolha se faltar espaço.” <br>
+
+flex-basis → “comece com este tamanho.”</h1>
+<p>flex-1</p>
+<div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">BBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">DEF</div>
+</div>
+<p>flex-mix</p>
+<div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-2">D</div>
+    <div class="item flex-1">DEF</div>
+</div>
+<p>width ignorado => basis =0</p>
+<div class="flex-container">
+    <div class="item flex-1 largura">A</div>
+    <div class="item flex-1 largura">BBB</div>
+    <div class="item flex-1 largura">CC</div>
+    <div class="item flex-1 largura">D</div>
+    <div class="item flex-1 largura">DEF</div>
+</div>
+    
+</body>
+</html>
