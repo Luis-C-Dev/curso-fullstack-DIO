@@ -6,22 +6,84 @@
     <title>Document</title>
 </head>
 <style>
+    .coluna{
+        flex-direction: column;
+    }
     .container{
         display: flex;
         border: 2px solid black;
         max-width: 350px;
+        margin-bottom: 10px;
+    }
+    .align-container{
+        align-items: end;
     }
     .item{
-
+        background-color: brown;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+    }
+    .center{
+        align-self: center;
+    }
+    .start{
+        align-self: flex-start;
+    }
+    .end{
+        align-self: flex-end;
+    }
+    .baseline{
+        align-self: baseline;
+    }
+    .stretch{
+        align-self: stretch;
+    }
+    .auto{
+        align-self: auto;
     }
 </style>
 <body>
+    <h1>row</h1>
     <div class="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item auto">AAA</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item auto">item 4</div>
+    </div>
+    <h1>align-itens: center</h1>
+    <div class="container align-container">
+        <div class="item center">AAA</div>
+        <div class="item start">1234</div>
+        <div class="item stretch">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item end">item 4</div>
+    </div>
+    <div class="container align-container">
+        <div class="item center">AAA</div>
+        <div class="item start">1234</div>
+        <div class="item stretch">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item end">item 4</div>
+    </div>
+    <h1>column</h1>
+        <div class="container coluna">
+        <div class="item auto">AAA</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item auto">item 4</div>
+    </div>
+    <h1>align-itens: center</h1>
+    <div class="container coluna align-container">
+        <div class="item center">AAA</div>
+        <div class="item start">1234</div>
+        <div class="item stretch">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item end">item 4</div>
+    </div>
+    <div class="container coluna align-container">
+        <div class="item center">AAA</div>
+        <div class="item start">1234</div>
+        <div class="item stretch">Lorem, ipsum dolor sit amet consectetur</div>
+        <div class="item end">item 4</div>
     </div>
     
 </body>
