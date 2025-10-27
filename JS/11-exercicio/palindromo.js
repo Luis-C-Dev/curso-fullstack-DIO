@@ -1,0 +1,5 @@
+let palavra = "meupenis ta duro"
+let palindromo = palavra.split('').reverse().join('') === palavra? console.log('é um palidromo !!!'): console.log('é um fracasso total ;(')
+console.log( palavra.split('').reverse().join('') )/*split soletra cada letra retornando um array com cada letra e sua ordem, reverse:autoesplicativo ne ele vai reverter a ordem, o join vai juntar o array em uma palavra novamente*/
+// split originalmente serve pra separar um item do resto e retornaria dois arrays. como eu coloquei aspas vazias ele não vai separar nada só vai retornar o array com cada letra
+// .join serve pra juntar arrays em strings novas. dentro dos parenteses viria o separador. se colocasse pra dar join em um array soletrando ovo e dentro dos parentes viesse um "-" ficaria: o-v-o. eu coloquei aspas vazias ent veio sem separador

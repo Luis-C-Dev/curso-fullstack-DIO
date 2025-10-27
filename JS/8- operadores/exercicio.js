@@ -18,3 +18,5 @@ function  comparador (A, B){
         console.log("mano só pode ser mais ou igual que 20 ne mano")
     }
 }
+ let contador = 0
+  console.log(contador)
