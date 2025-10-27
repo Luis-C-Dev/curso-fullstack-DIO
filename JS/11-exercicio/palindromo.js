@@ -1,4 +1,4 @@
-let palavra = "meupenis ta duro"
+let palavra = "ovo"
 let palindromo = palavra.split('').reverse().join('') === palavra? console.log('é um palidromo !!!'): console.log('é um fracasso total ;(')
 console.log( palavra.split('').reverse().join('') )/*split soletra cada letra retornando um array com cada letra e sua ordem, reverse:autoesplicativo ne ele vai reverter a ordem, o join vai juntar o array em uma palavra novamente*/
 // split originalmente serve pra separar um item do resto e retornaria dois arrays. como eu coloquei aspas vazias ele não vai separar nada só vai retornar o array com cada letra
