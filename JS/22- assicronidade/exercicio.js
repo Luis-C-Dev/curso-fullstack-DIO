@@ -1,2 +1,0 @@
-//1. Utilize a APi https://thatcopy.pu/catapi/rest para fazer as chamadas com o método fetch();
-//2. Utilize seus conhecimentos na manipulaçao do DOM para criar a imagem e ativar o evento de clique do botão
