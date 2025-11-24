@@ -1,0 +1,64 @@
+body{
+    transition-duration: 1s;
+    margin: 3px;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+footer{
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+    background-color: rgb(205, 205, 205);
+    
+}
+
+.rodapeBlack{
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+    background-color: beige;
+    
+    
+}
+
+.blacktheme{
+    transition-duration: 1s;
+    background-color: black;
+}
+
+#button{
+     transition-duration: 1s;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.btnblacktheme{
+    transition-duration: 1s;
+    background-color: gray;
+    color: aliceblue;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+#button:hover{
+    transition-duration: 1s;
+    border: 2px solid white;
+
+}
+
+.rodapeblacktheme{
+    transition-duration: 1s;
+    color: white;
+    background-color: gray;
+}
