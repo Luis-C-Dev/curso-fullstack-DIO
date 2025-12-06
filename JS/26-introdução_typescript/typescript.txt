@@ -1,0 +1,30 @@
+TypeScript é uma linguagem baseada em JavaScript.
+Ele foi criado pela Microsoft e serve principalmente para evitar bugs e deixar o código mais organizado, usando tipagem.
+
+Nós programamos em TypeScript (arquivos .ts), e depois compilamos para JavaScript (arquivos .js), porque o navegador e o Node não entendem TypeScript diretamente.
+
+Para usar TypeScript em um projeto, é importante usar o npm e o npx, porque:
+
+o Node não entende TypeScript, então precisamos instalar o compilador
+
+o npm cria o ambiente onde instalamos pacotes
+
+o npx executa ferramentas como o compilador do TS
+
+Usar o npm basicamente cria o ambiente para instalar tudo o que o projeto precisa.
+
+No caso do TS, usamos esses comandos para instalar e executar o compilador:
+
+
+
+1: npm init - é pra iniciar o npm no projeto pois nele que baixaremos os pacotes. Ele cria o package.json, que é onde ficam registradas as dependências.
+após aceitar tudo e ter iniciado o npm:
+2: npm install typescript --save-dev - basicamente estamos instalando o typescript ja que o node originalmente n entende o ts.O --save-dev significa que é uma dependência de desenvolvimento. ⚠️ Atenção: não é que “tem menos restrições”, e sim que esse pacote só é usado enquanto estamos programando, não em produção.
+3: npx tsc --init: após instalar o typescript iniciaremos o compilador dele. vai criar um arquivo onde ele vai converter pra js de acordo com as configurações estabelecidas nesse arquivo tsc = typescript conpilator  arquivo criado: tsconfig.json
+4: é importante verificar se as configurações estão corretas. no meu caso opções importantes estavam comentadas. tive que descomentar as seguintes linhas de codigo:
+"rootDir": "./src",  isso pergunta: onde esta o arquivo ts?
+"outDir": "./dist", e esse pergunta pra onde devo mandar o arquivo conpilado?
+5: é importante criar o arquivo onde vai o rootDir pois ele n é criado automaticamente. é boa pratica criar uma pasta src ja que essa é a exata função de uma pasta src
+6: npx tsc - isso vai conpilar o arquivo ts encontrado na pasta src (pois é isso que foi decidido nas config) e após conpilar vai mandar o arquivo pronto pra pasta decidida no outDir. ou seja ele vai criar a pasta dist automaticamente
+7; agora é só rodar o codigo normalmente como um arquivo js la na pasta dist
+   
