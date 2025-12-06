@@ -1,0 +1,1 @@
+console.log('hello world estou funcionando com typescript em um navegador')

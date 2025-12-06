@@ -1,0 +1,40 @@
+uma coisa que descobri depois. pra fazer rodar em navegador precisamos mudar essas opções das configurações:
+original:
+ "module": "nodenext",
+ "target": "esnext",
+
+ para:
+  "module": "es6",
+  "target": "es6",
+  e temos que mudar la no html no script
+  maneira normal:
+  <script src: "../dist/index.js"></script>
+  para:
+  <script type:"module" src: "../dist/index.js"></script> /*só adiciona o type só isso que muda*/
+
+  aparentemente isso faz rodar no navegador mas deixa de rodar no node.
+  isso ainda não aconteceu comigo mas se der qualquer erro é importante verificar isso
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ao executar com o node normal ele até executava mas dava uma mensagem que falava que não é recomendado:
+  Warning: Module type ... is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected.
+tradução: “O Node viu que seu arquivo não foi marcado como módulo ES (ESModule),
+mas também não conseguiu entender como CommonJS.
+Então eu detectei que você está usando ESModules e tentei rodar
+assim mesmo.
+Mas isso gera um pequeno custo de desempenho.”
+
+pra resolver isso tive que adicionar no package.json uma linha declarando que ele é um modulo
+
+na ultima linha do primeiro "paragrafo" adiciono "type": "module", em baixo do "main": "index.js",
+codigo completo:
+  "name": "aprendendo_typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+
+
+isso faz ele parar de reclamar mas não sei se isso da mais algum problema
+
+dessa forma aparentemente posso executar tanto no navegador quanto aqui no node do vscode

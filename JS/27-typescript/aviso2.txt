@@ -1,0 +1,1 @@
+vou no futuro criar uma pasta com todas as aulas ts juntas. isso antes de finalizar o curso de ts. n faço isso agora pois quero exercitar a criação do npm e npx. quando eu dominar as aulas serão todas dentro da pasta src. avisare quando isso acontecer

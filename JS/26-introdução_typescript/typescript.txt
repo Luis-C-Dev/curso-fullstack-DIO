@@ -28,3 +28,7 @@ após aceitar tudo e ter iniciado o npm:
 6: npx tsc - isso vai conpilar o arquivo ts encontrado na pasta src (pois é isso que foi decidido nas config) e após conpilar vai mandar o arquivo pronto pra pasta decidida no outDir. ou seja ele vai criar a pasta dist automaticamente
 7; agora é só rodar o codigo normalmente como um arquivo js la na pasta dist
    
+
+como esse arquivo vem acompanhado do npm nele vem muitos muitos arquivos o que deixa muito pesado desnecessariamente. é interessante adicionar um arquivo .gitignore pra ignorar a pasta node_modules e a pasta dist ja que se alguem for clonar ele vai criar o arquivo js quando conpilar ele. ent ignore esses arquivos quando for mandar pro github
+ignore tbm essa porrinha aqui *.map
+n sei o pq
