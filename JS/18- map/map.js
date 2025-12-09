@@ -8,5 +8,3 @@ map.delete('banana')/* serve pra remover um item*/
 console.log (map)
 map.get('banana')
 console.log (map)
-
-

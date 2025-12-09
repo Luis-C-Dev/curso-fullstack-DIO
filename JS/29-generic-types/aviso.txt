@@ -1,0 +1,1 @@
+de agora em diante todas as aulas de ts estarão dentro da pasta src. ja que no curso o professor ta ensinando todos as materias um atras do outro
