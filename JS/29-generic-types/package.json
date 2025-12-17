@@ -11,5 +11,9 @@
   "description": "",
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.33",
+    "jquery": "^3.7.1"
   }
 }

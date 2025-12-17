@@ -1,0 +1,21 @@
+PARA IMPORTAR QUALQUER BIBLIOTECA, PRIMEIRO PRECISAMOS INSTALÁ-LA.
+1) INSTALAÇÃO DA BIBLIOTECA
+npm install nome-da-biblioteca
+2) IMPORTAÇÃO NO ARQUIVO TYPESCRIPT
+import nomeQueVoceVaiChamar from "nome-da-biblioteca";
+AVISO:
+O nome que você usa no import pode ser qualquer um, pois ele é apenas uma variável local.
+Eu citei “qualquer nome” apenas para explicar como o sistema funciona logicamente.
+PORÉM, É BOA PRÁTICA (E PARA EVITAR ERROS):
+- usar o nome padrão da biblioteca
+- ou o símbolo mais comum dela (ex: $ no jQuery)
+
+
+
+3) TIPOS NO TYPESCRIPT
+Algumas bibliotecas não vêm tipadas por padrão.
+Nesses casos, precisamos instalar os tipos separadamente para que o TypeScript
+reconheça os métodos, evite erros e ofereça autocomplete.
+
+O comando normalmente é:
+npm install -D @types/nome-da-biblioteca
