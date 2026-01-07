@@ -23,12 +23,12 @@ function App() {
 
   return (
     <> {/*aqui no componente eu informo q la na propriedade title resulta teste. uma string. o html consegue ler e roda tile: teste */}
-    <Card title="teste"/> {/*aqui eu chamei aquela função e a função retorna um html. o html é lido e rodado.*/  /*aqui eu fiz "selfclose" no elemento pois ele n aceita "html's" filhos. é só o dele e acabou */}
+    <Card children title="teste"/> {/*aqui eu chamei aquela função e a função retorna um html. o html é lido e rodado.*/  /*aqui eu fiz "selfclose" no elemento pois ele n aceita "html's" filhos. é só o dele e acabou */}
     {/*poderiamos só escrever o html aqui dentro mas usando  esses componentes podemos re-chamalos e podemos aplicar propriedades nele. ex */}
       
-    <Card title="teste"/>
+    <Card children title="teste"/>
 {/*outra utilidade dos componentes */}
-    <Card title="teste"/> {/*esses vão ter erro ja que esta faltando a propriedade children */}
+    <Card children title="teste"/> {/*antes estavam dando erro por eu simplesmente n declarar o children. agr declarei eles e n dei valor nenhum ent vai ficar sem children e sem erro */}
 
     {/*podemos colocar um children se especificarmos o lugar q ele vai ficar. tudo q é escrito entre duas tags é filho vem de um q ja tem informação. vc vai la e coloca mais */}
     <Card title="coloquei um children">
