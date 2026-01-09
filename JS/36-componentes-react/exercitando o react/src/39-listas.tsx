@@ -1,6 +1,6 @@
 import { useState } from "react"
 function Lista() {/*independente se é um array ou qualquer outra coisa. o useState tem que ter parenteses */
-    const [lista,setlista]= useState([
+    const [lista,]= useState([
     {id:1, label: "primeiro item"},
     {id:2, label: "segundo item"},
     {id:3, label: "terceiro item"}

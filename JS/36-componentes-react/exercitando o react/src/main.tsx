@@ -4,6 +4,7 @@ import App from './App.tsx'
 import Use from "./37-useState.tsx"
 import Render from './38-renderização-condicional.tsx'
 import Lista from './39-listas.tsx'
+import Dinamico from "./40-listasDinamicas.tsx"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,5 +12,6 @@ createRoot(document.getElementById('root')!).render(
     <Use/>
     <Render/>
     <Lista/>
+    <Dinamico/>
   </StrictMode>,
 )
